@@ -1,20 +1,4 @@
 #!/usr/bin/env python
-"""mingal
-
-mingal - a MINimalistic Genetic Algorithm Library
-
-Usage: Subclass `Candidate` and pass your subclass to `sim`.
-
-In many cases, it will be easiest for you to maintain the bit string gene
-representation and just override the `compute_fitness` method; this lets you use
-the `mutate` and `mate` methods provided. Of course, if encoding and decoding
-such a representation is sufficiently difficult and/or you want more structured
-mutation and mating (which might be the case if the space of *feasible*
-candidates in your problem is sparse) then you can override `mate` and `mutate`
-as well.
-
-If you use or modify this, I'd appreciate the opportunity to see what you did.
-"""
 
 __author__ = 'Richard Frankel'
 __email__ = 'richard@frankel.tv'
