@@ -30,8 +30,9 @@ License
 
 mingal is released under the MIT license, the text of which follows. That
 basically means you can do whatever you want with it. However, if you use or
-modify mingal, I'd appreciate it if you'd take the time to [send me an
-email](mailto:richard@frankel.tv?subject=mingal) and show me what you did.
+modify mingal, I'd love the opportunity to see what you did. In order to
+decrease the friction of showing me, here's a link to [send me an
+email about it](mailto:richard@frankel.tv?subject=mingal).
 
 Copyright (C) 2011 by Richard Frankel (richard@frankel.tv)
 
