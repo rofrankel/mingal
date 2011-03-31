@@ -7,7 +7,7 @@ Usage
 In a nutshell, you use mingal by sublcassing `mingal.Candidate` and passing
 your sublclass to `mingal.sim`. You'll almost certainly want to override at
 least the `compute_fitness` method. Each method's docstring should be
-sufficient for you to override it when applicable.
+sufficiently explanatory for you to override it when applicable.
 
 In many cases, it will be easiest for you to maintain the bit string gene
 representation and override only the `compute_fitness` method; this lets you
