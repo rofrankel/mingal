@@ -13,9 +13,9 @@ In many cases, it will be easiest for you to maintain the bit string gene
 representation and override only the `compute_fitness` method; this lets you
 use the `mutate` and `mate` methods provided. Of course, if encoding and
 decoding such a representation is sufficiently difficult and/or you want more
-structured mutation and mating (which might be the case if the space of
-*feasible* candidates in your problem is sparse) then you can override `mate`
-and `mutate` as well.
+structured mutation and mating (which might be the case if the distribution of
+*feasible* candidates in your candidate space is sparse) then you can override
+`mate` and `mutate` as well.
 
 Sample
 ------
