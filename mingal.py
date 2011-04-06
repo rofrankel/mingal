@@ -5,8 +5,8 @@ __email__ = 'richard@frankel.tv'
 __credits__ = ['Richard Frankel']
 __copyright__ = "Copyright 2011, Richard Frankel"
 __license__ = 'MIT'
-__version__ = (0, 1)
-__date__ = '31 March 2011'
+__version__ = (0, 1, 1)
+__date__ = '6 April 2011'
 
 import copy
 from random import random, randrange
