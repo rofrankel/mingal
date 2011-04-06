@@ -22,8 +22,8 @@ class Candidate(object):
     p_mut = 0.1
     
     def __init__(self):
-        bits = [str(randrange(0, 2)) for i in range(self.length)]
-        self.genes = reduce(str.__add__, bits)
+        self.genes = reduce(str.__add__,
+                            [str(randrange(0, 2))for i in range(self.length)])
         self._fitness = None
     
     @property
@@ -39,11 +39,11 @@ class Candidate(object):
         return self._fitness
     
     def compute_fitness(self):
-        """Computes and caches the candidate's fitness.
+        """Computes and caches the candidate's fitness in self._fitness.
         
-        By default, returns the number of '1's in self.genes, which is a bit
-        string by default. You'll almost certainly want to override this method
-        with something more sophisticated.
+        Returns the number of '1's in self.genes, which is a bit string by
+        default. You'll almost certainly want to override this method with
+        something more sophisticated.
         """
         self._fitness = self.genes.count('1')
     
@@ -101,15 +101,14 @@ def resample(pop):
     Takes a list of candidates and returns a new list of candidates, resampled
     proportional to fitness.
     """
-    fitnesses = [t.fitness for t in pop]
-    
-    resampled = list()
+    resampled = []
     size = len(pop)
     pos = 0
+    fitnesses = [t.fitness for t in pop]
     step = sum(fitnesses) / float(size)
     
     for i in range(size):
-        while((i + .5) * step > sum(fitnesses[:pos + 1])):
+        while (i + .5) * step > sum(fitnesses[:pos + 1]):
             pos += 1
         
         resampled.append(pop[pos])
